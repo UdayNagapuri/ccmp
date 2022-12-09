@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Search Engine</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-6" style="text-align: center;">
+                    <h1 style="color:greenyellow">
+                    Search Engine
+                    </h1>
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-6" style="text-align: center;">
+                    <div class="form">
+                        <form action="/results" method="post">
+                            <input type="text" placeholder="Search" name="search" id="search" style="width:500px;">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+
+                    
+                    <!-- <button class="btn-success" style="size: 2em;"><img src="{{ url_for('static',filename='/img/search (1).png')  }}" alt=""></button> -->
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+<link rel="stylesheet" href="style.css" >
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')  }}">

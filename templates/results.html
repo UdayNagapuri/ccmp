@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resultstyle.css') }}">
+</head>
+<body>
+    <div class="table-users">
+        <div class="header">
+            Search Results
+        </div>
+        <table cellspacing="0">
+            <tr>
+                <th>RESULTS</th>
+            </tr>
+            {% for result in results%}
+            <tr>
+                <td><a href={{ result[0] }}> {{ result[1] }} </a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
